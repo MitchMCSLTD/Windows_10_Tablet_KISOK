@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AssignedAccessConfiguration
+    xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"
+    xmlns:rs5="http://schemas.microsoft.com/AssignedAccess/201810/config"
+>
+    <Profiles>
+        <Profile Id="{Enter Generated GUI HERE}">
+            <AllAppsList>
+                <AllowedApps>
+                    <App DesktopAppPath="%SystemRoot%\System32\mstsc.exe" rs5:AutoLaunch="true" />
+                    <App DesktopAppPath="%SystemRoot%\ImmersiveControlPanel\SystemSettings.exe" />
+                    <App DesktopAppPath="%SystemRoot%\System32\control.exe" />
+                    <App DesktopAppPath="%windir%\explorer.exe" />
+                    <App DesktopAppPath="C:\Windows\system32\cmd.exe" />
+                    <App DesktopAppPath="%windir%\System32\WindowsPowerShell\v1.0\Powershell.exe" />
+                    <App AppUserModelId="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" />
+                </AllowedApps>
+            </AllAppsList>
+            <StartLayout>
+                <![CDATA[<LayoutModificationTemplate xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout" xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout" Version="1" xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification">
+  <LayoutOptions StartTileGroupCellWidth="6" />
+  <DefaultLayoutOverride>
+    <StartLayoutCollection>
+      <defaultlayout:StartLayout GroupCellWidth="6">
+        <start:Group Name="">
+          <start:DesktopApplicationTile Size="2x2" Column="0" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Remote Desktop Connection.lnk" />
+          <start:DesktopApplicationTile Size="2x2" Column="2" Row="0" DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\CMD.lnk" />
+          <start:Tile Size="2x2" Column="3" Row="0" AppUserModelID="windows.immersivecontrolpanel_cw5n1h2txyewy!microsoft.windows.immersivecontrolpanel" />
+        
+        </start:Group>
+      </defaultlayout:StartLayout>
+    </StartLayoutCollection>
+  </DefaultLayoutOverride>
+</LayoutModificationTemplate>
+                ]]>
+            </StartLayout>
+            <Taskbar ShowTaskbar="true"/>
+        </Profile>
+    </Profiles>
+    <Configs>
+        <Config>
+            <Account>.\Tablet</Account>
+            <DefaultProfile Id="{Enter Generated GUI HERE}"/>
+        </Config>
+    </Configs>
+</AssignedAccessConfiguration>
